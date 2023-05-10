@@ -1,0 +1,165 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+
+body {
+
+    font-family: "pilsner", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+
+.main-nav {
+    display: flex;
+}
+
+a.push {
+    margin-left: auto;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+p {
+    color: white;
+}
+
+.putt {
+    padding-left: 1rem;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+
+    font-size: x-large;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.split {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.bild {
+    max-width: 100%;
+    height: auto;
+}
+
+.jor {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    padding-left: 4ch;
+    padding-top: 4ch;
+    padding-bottom: 5ch;
+    font-size: large;
+}
+
+
+.container {
+    width: min(100ch, 100vw - 4rem);
+    margin-inline: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+
+}
+
+body {
+    background-color: rgb(84, 84, 84);
+}
+
+nav>a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+li {
+    font-size: x-large;
+    color: #ffffff;
+}
+
+nav {
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+.hero {
+    display: grid;
+    grid-template-areas: 'stack';
+}
+
+.hero-gradient {
+    grid-area: stack;
+    place-self: end;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        var(--color-dark),
+        var(--color-dark-transparent)
+    );
+}
+
+.hero > picture {
+    place-self: center;
+    grid-area: stack;
+    width: 100%;
+    height: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.hero-content {
+    grid-area: stack;
+    place-self: end;
+    padding: var(--space-m-l) 0;
+    color: var(--color-light);
+}
+
+@media (max-width: 30rem) {
+    .lead {
+        display: none;
+    }
+    .hero > picture {
+        max-height: 15vh;
+    }
+}
