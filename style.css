@@ -2,19 +2,26 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
+mitten {
+    justify-content: center;
+    align-items: center;
+}
 
 body {
 
     font-family: "pilsner", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
+main {
+    margin-bottom: 4rem;
+}
 
 .main-nav {
     display: flex;
@@ -55,13 +62,28 @@ a:hover {
 .split {
     display: flex;
     justify-content: space-between;
-    
 
+
+}
+
+header {
+    display: grid;
+    place-content: center;
 }
 
 .bild {
     max-width: 100%;
     height: auto;
+}
+
+div.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+text {
+    padding: 10px;
 }
 
 .jor {
@@ -73,6 +95,7 @@ a:hover {
     padding-top: 4ch;
     padding-bottom: 5ch;
     font-size: large;
+    
 }
 
 
@@ -113,10 +136,13 @@ li {
     color: #ffffff;
 }
 
+
+
 nav {
     color: #ffffff;
     background-color: #2f2f2f;
 }
+
 .hero {
     display: grid;
     grid-template-areas: 'stack';
@@ -127,14 +153,12 @@ nav {
     place-self: end;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        0deg,
-        var(--color-dark),
-        var(--color-dark-transparent)
-    );
+    background: linear-gradient(0deg,
+            var(--color-dark),
+            var(--color-dark-transparent));
 }
 
-.hero > picture {
+.hero>picture {
     place-self: center;
     grid-area: stack;
     width: 100%;
@@ -159,7 +183,8 @@ nav {
     .lead {
         display: none;
     }
-    .hero > picture {
+
+    .hero>picture {
         max-height: 15vh;
     }
 }
